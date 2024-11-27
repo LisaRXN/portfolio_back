@@ -24,8 +24,6 @@ app.get("/", (req, res) => {
 app.post("/contact", (req, res) => {
   sendMail(req, res);
   console.log(req.body); 
-  res.status(200).send("Received");
-
 });
 
 
